@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+#define USE_HEADER1 1
+
+#if USE_HEADER1 == 1
+    #include "header1.h"
+#else
+    #include "header2.h"
+#endif
+
+int main() {
+    printf("Start\n");
+    f();
+    printf("Finish\n");
+    return 0;
+}
